@@ -1,108 +1,123 @@
-﻿# Sentinel API Assurance Framework
+# Sentinel API Assurance Framework
 
-GitHub repository name: `sentinel-api-assurance`
+![.NET CI](https://github.com/Yakup24/Sentinel-API-Assurance/actions/workflows/dotnet-ci.yml/badge.svg)
 
-Kurumsal SOAP/API servis regresyon otomasyon framework'u.
+**Sentinel API Assurance**, SOAP ve REST tabanlı kurumsal servislerin regresyon, smoke ve güvenlik kontrollü doğrulama süreçleri için geliştirilmiş .NET 8 tabanlı test otomasyon framework'üdür.
 
-Bu proje VOLTRAN servisleri icin test suite, servis registry, request template, guvenlik politikasi ve HTML/JSON/CSV raporlama saglar. Eski Autopilot `<call active="true" service="..." operation="..." />` formatini da okuyabilir.
+Projenin ana hedefi; servis operasyonlarını tek tek manuel denemek yerine, tanımlı suite dosyaları üzerinden otomatik çalıştırmak, riskli operasyonları güvenli şekilde bloklamak ve koşum sonucunu HTML/JSON/CSV raporlarıyla görünür hale getirmektir.
 
-## Kapsam
+## Öne çıkan yetenekler
 
-- 20 servis registry kaydi
+- STB / PRP gibi çoklu ortam yönetimi
+- JSON tabanlı test suite yapısı
+- Legacy Autopilot `<call active="true" service="..." operation="..." />` formatı desteği
+- SOAP 1.1 / SOAP 1.2 request envelope üretimi
+- REST test executor iskeleti
+- Template değişkenleri: `{{Msisdn}}`, `{{CustomerId}}`, `{{ENV:TOKEN_NAME}}`
+- Assertion engine:
+  - HTTP status kontrolü
+  - SOAP Fault kontrolü
+  - Response contains / not contains
+  - XML element exists
+  - XML element equals
+  - Maksimum response time kontrolü
+- Riskli operasyon güvenlik politikası
+- Retry / timeout yönetimi
+- Dry-run kontrol modu
+- HTML, JSON ve CSV raporlama
+- GitHub Actions CI pipeline
+
+## Mevcut kapsam
+
+- 20 servis registry kaydı
 - 148 SOAP operasyonu
 - 147 aktif test case
-- 148 request body template dosyasi
-- 1 operasyon bilincli kapali: `VirtualMsisdn_v1.0.submitOrder`
-- State-changing operasyonlar varsayilan olarak bloklu
+- 148 request body template dosyası
+- 1 operasyon bilinçli kapalı: `VirtualMsisdn_v1.0.submitOrder`
+- State-changing operasyonlar varsayılan olarak bloklu
 
-## Proje yapisi
+## Proje yapısı
 
 ```text
 src/SentinelApiAssurance/
-|-- Catalog/
-|   `-- voltran-service-catalog.json
-|-- Configuration/
-|-- Execution/
-|-- Models/
-|-- Reporting/
-|-- Requests/
-|-- Safety/
-|-- Services/
-|-- Suites/
-|   |-- voltran-enterprise-regression-suite.json
-|   `-- voltran-smoke-suite.json
-|-- Utilities/
-|-- appsettings.json
-|-- test-calls.xml
-|-- SentinelApiAssurance.csproj
-`-- Program.cs
+├─ Catalog/
+│  └─ voltran-service-catalog.json
+├─ Configuration/
+├─ Execution/
+├─ Models/
+├─ Reporting/
+├─ Requests/
+├─ Safety/
+├─ Services/
+├─ Suites/
+│  ├─ voltran-enterprise-regression-suite.json
+│  └─ voltran-smoke-suite.json
+├─ Utilities/
+├─ appsettings.json
+├─ test-calls.xml
+├─ SentinelApiAssurance.csproj
+└─ Program.cs
 ```
 
-## Calistirma
+## Hızlı başlangıç
 
 ```powershell
-cd C:\Users\yakup\Downloads\EnterpriseSoapApiTestAutomation\EnterpriseSoapApiTestAutomation\src\SentinelApiAssurance
-dotnet build SentinelApiAssurance.csproj
+git clone https://github.com/Yakup24/Sentinel-API-Assurance.git
+cd Sentinel-API-Assurance
+
+dotnet restore src/SentinelApiAssurance/SentinelApiAssurance.csproj
+dotnet build src/SentinelApiAssurance/SentinelApiAssurance.csproj
 ```
 
-Gercek endpoint'e gitmeden suite kontrolu:
+Gerçek endpoint'e istek atmadan suite ve dosya kontrolü yapmak için:
 
 ```powershell
-dotnet run --project SentinelApiAssurance.csproj -- --dry-run
+dotnet run --project src/SentinelApiAssurance/SentinelApiAssurance.csproj -- --dry-run
 ```
 
-STB ortaminda varsayilan regression suite:
+STB ortamında varsayılan regression suite'i çalıştırmak için:
 
 ```powershell
-dotnet run --project SentinelApiAssurance.csproj -- --env STB
+dotnet run --project src/SentinelApiAssurance/SentinelApiAssurance.csproj -- --env STB
 ```
 
-PRP ortaminda ayni suite:
+PRP ortamında belirli suite ile çalıştırmak için:
 
 ```powershell
-dotnet run --project SentinelApiAssurance.csproj -- --env PRP --suite Suites/voltran-enterprise-regression-suite.json
+dotnet run --project src/SentinelApiAssurance/SentinelApiAssurance.csproj -- --env PRP --suite Suites/voltran-enterprise-regression-suite.json
 ```
 
-Legacy call XML ile:
+Legacy call XML ile çalıştırmak için:
 
 ```powershell
-dotnet run --project SentinelApiAssurance.csproj -- --env STB --calls test-calls.xml
+dotnet run --project src/SentinelApiAssurance/SentinelApiAssurance.csproj -- --env STB --calls test-calls.xml
 ```
 
-## Konfigurasyon
+## Konfigürasyon
 
-`appsettings.json` icinde ortam URL'leri, servis endpoint'leri, retry/timeout degerleri ve test verileri yonetilir.
+Ana ayarlar `src/SentinelApiAssurance/appsettings.json` içindedir.
 
-Template degiskenleri:
+```json
+{
+  "DefaultEnvironment": "STB",
+  "DefaultSuitePath": "Suites/voltran-enterprise-regression-suite.json",
+  "TimeoutSeconds": 30,
+  "RetryCount": 1,
+  "BlockDangerousOperationsWithoutExplicitApproval": true
+}
+```
+
+Template değişkenleri request body ve header alanlarında kullanılabilir:
 
 ```xml
 <msisdn>{{Msisdn}}</msisdn>
 <customerId>{{CustomerId}}</customerId>
-```
-
-Environment variable okumak icin:
-
-```xml
 <token>{{ENV:VOLTRAN_TEST_TOKEN}}</token>
 ```
 
-## Request template mantigi
+## Güvenlik politikası
 
-`Requests/<Service>/<Operation>.xml` dosyalari otomatik uretildi. Bunlar WSDL olmadan hazirlanan doldurulabilir sablonlardir. Canli regresyon kosusu icin her operasyonun body alanlari ilgili WSDL kontratina gore netlestirilmelidir.
-
-Ornek:
-
-```xml
-<ser:getAddressByMsisdn xmlns:ser="http://voltran.local/AddressOperations_v1.0">
-  <request>
-    <msisdn>{{Msisdn}}</msisdn>
-  </request>
-</ser:getAddressByMsisdn>
-```
-
-## Guvenlik politikasi
-
-Asagidaki tarz operasyonlar varsayilan olarak `Skipped` olur:
+Aşağıdaki türde operasyonlar varsayılan olarak `Skipped` olur:
 
 - `create*`
 - `submit*`
@@ -116,24 +131,41 @@ Asagidaki tarz operasyonlar varsayilan olarak `Skipped` olur:
 - `set*`
 - `inform*`
 
-Sadece onayli test datasiyla kosmak icin ilgili case icinde:
+State-changing operasyonu yalnızca onaylı test datası ile çalıştırmak için ilgili case içinde açık izin verilmelidir:
 
 ```json
 "AllowStateChangingOperation": true
 ```
 
-olarak acilabilir.
+Ayrıntılı açıklama için: [`docs/OPERATION_SAFETY.md`](docs/OPERATION_SAFETY.md)
 
 ## Raporlar
 
-Kosum sonunda `bin/Debug/net8.0/Reports` altina su raporlar yazilir:
+Koşum sonunda raporlar uygulama çıktı klasöründeki `Reports` dizinine yazılır:
 
 - HTML summary
 - JSON result
 - CSV result
 
-HTML raporda genel sonuc ve servis bazli ozet bulunur.
+HTML raporda genel özet, servis bazlı durum ve test case detayları bulunur.
 
-## License
+## Dokümantasyon
+
+- [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md)
+- [`docs/OPERATION_SAFETY.md`](docs/OPERATION_SAFETY.md)
+- [`docs/RUNBOOK.md`](docs/RUNBOOK.md)
+- [`docs/TEST_STRATEGY.md`](docs/TEST_STRATEGY.md)
+
+## Yol haritası
+
+- WSDL parser ile operasyon keşfi
+- Data-driven test desteği
+- JUnit XML rapor çıktısı
+- DB assertion modülü
+- Masked response logging
+- GitHub Actions artifact upload
+- Basit web dashboard
+
+## Lisans
 
 This project is licensed under the MIT License. See [LICENSE](LICENSE).
