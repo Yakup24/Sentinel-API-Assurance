@@ -1,0 +1,91 @@
+{
+  "Name": "VOLTRAN STB Smoke Regression Suite",
+  "Description": "VOLTRAN servisleri için kurumsal SOAP/API regresyon test suite örneği.",
+  "Owner": "QA / Integration Team",
+  "Cases": [
+    {
+      "Id": "ADDR-001",
+      "Title": "MSISDN ile adres sorgulama",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getAddressByMsisdn",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getAddressByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "XmlElementExists",
+          "ElementName": "addressId"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INV-001",
+      "Title": "CustomerId ile açık fatura sorgulama",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getOpenInvoicesWithCustomerId",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getOpenInvoicesWithCustomerId.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 7000
+        }
+      ]
+    },
+    {
+      "Id": "PRD-001",
+      "Title": "Ürün arama sorgusu",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "searchProducts",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/searchProducts.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDR-STATE-001",
+      "Title": "Adres güncelleme operasyonu - güvenlik nedeniyle kapalı",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "upsertPostalAddress",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/upsertPostalAddress.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        }
+      ]
+    }
+  ]
+}

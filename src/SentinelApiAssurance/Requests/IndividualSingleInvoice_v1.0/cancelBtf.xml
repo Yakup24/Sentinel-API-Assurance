@@ -1,0 +1,6 @@
+﻿<ser:cancelBtf xmlns:ser="http://voltran.local/IndividualSingleInvoice_v1.0">
+  <!-- Generated Sentinel template: state-changing; keep blocked until approved test data is ready. Align fields with the real WSDL contract. -->
+  <request>
+    <correlationId>{{CorrelationId}}</correlationId>
+  </request>
+</ser:cancelBtf>

@@ -1,0 +1,6 @@
+﻿<ser:readCampaign xmlns:ser="http://voltran.local/SimCardQuery_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <campaignId>{{CampaignId}}</campaignId>
+  </request>
+</ser:readCampaign>

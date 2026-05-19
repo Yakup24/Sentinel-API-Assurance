@@ -1,0 +1,7 @@
+﻿<ser:getInvoiceTypeWithNcst xmlns:ser="http://voltran.local/InvoiceType_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <invoiceId>{{InvoiceId}}</invoiceId>
+    <ncst>{{Ncst}}</ncst>
+  </request>
+</ser:getInvoiceTypeWithNcst>

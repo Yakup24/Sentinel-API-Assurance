@@ -1,0 +1,7 @@
+﻿<ser:getAddressByNcst xmlns:ser="http://voltran.local/AddressOperations_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <addressId>{{AddressId}}</addressId>
+    <ncst>{{Ncst}}</ncst>
+  </request>
+</ser:getAddressByNcst>

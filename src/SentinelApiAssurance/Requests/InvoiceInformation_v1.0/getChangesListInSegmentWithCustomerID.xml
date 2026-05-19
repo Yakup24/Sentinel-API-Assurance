@@ -1,0 +1,7 @@
+﻿<ser:getChangesListInSegmentWithCustomerID xmlns:ser="http://voltran.local/InvoiceInformation_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <customerId>{{CustomerId}}</customerId>
+    <segmentId>{{SegmentId}}</segmentId>
+  </request>
+</ser:getChangesListInSegmentWithCustomerID>

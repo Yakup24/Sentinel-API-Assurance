@@ -1,0 +1,7 @@
+﻿<ser:getMainCoverProductIdByNcst xmlns:ser="http://voltran.local/ProductQuery_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <ncst>{{Ncst}}</ncst>
+    <productId>{{ProductId}}</productId>
+  </request>
+</ser:getMainCoverProductIdByNcst>

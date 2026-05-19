@@ -1,0 +1,7 @@
+﻿<ser:upsertNonPostalAddressByNprd xmlns:ser="http://voltran.local/AddressOperations_v1.0">
+  <!-- Generated Sentinel template: state-changing; keep blocked until approved test data is ready. Align fields with the real WSDL contract. -->
+  <request>
+    <addressId>{{AddressId}}</addressId>
+    <nprd>{{Nprd}}</nprd>
+  </request>
+</ser:upsertNonPostalAddressByNprd>

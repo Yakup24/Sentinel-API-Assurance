@@ -1,0 +1,6 @@
+﻿<ser:boCallBackForVirtualMsisdn xmlns:ser="http://voltran.local/VirtualMsisdn_v1.0">
+  <!-- Generated Sentinel template: state-changing; keep blocked until approved test data is ready. Align fields with the real WSDL contract. -->
+  <request>
+    <msisdn>{{Msisdn}}</msisdn>
+  </request>
+</ser:boCallBackForVirtualMsisdn>

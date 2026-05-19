@@ -1,0 +1,6 @@
+﻿<ser:msisdnInfo xmlns:ser="http://voltran.local/NumberStoragePlan_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <msisdn>{{Msisdn}}</msisdn>
+  </request>
+</ser:msisdnInfo>

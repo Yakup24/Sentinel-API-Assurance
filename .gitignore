@@ -1,0 +1,8 @@
+bin/
+obj/
+Reports/*.html
+Reports/*.json
+Reports/*.csv
+Logs/*.log
+*.user
+.vs/

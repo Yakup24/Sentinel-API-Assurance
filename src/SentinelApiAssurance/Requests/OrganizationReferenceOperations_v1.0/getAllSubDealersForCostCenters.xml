@@ -1,0 +1,7 @@
+﻿<ser:getAllSubDealersForCostCenters xmlns:ser="http://voltran.local/OrganizationReferenceOperations_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <dealerCode>{{DealerCode}}</dealerCode>
+    <costCenterCode>{{CostCenterCode}}</costCenterCode>
+  </request>
+</ser:getAllSubDealersForCostCenters>

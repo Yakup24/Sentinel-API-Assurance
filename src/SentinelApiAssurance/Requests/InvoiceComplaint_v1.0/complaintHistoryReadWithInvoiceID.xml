@@ -1,0 +1,6 @@
+﻿<ser:complaintHistoryReadWithInvoiceID xmlns:ser="http://voltran.local/InvoiceComplaint_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <invoiceId>{{InvoiceId}}</invoiceId>
+  </request>
+</ser:complaintHistoryReadWithInvoiceID>

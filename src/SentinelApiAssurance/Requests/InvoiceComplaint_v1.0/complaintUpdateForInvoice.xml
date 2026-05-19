@@ -1,0 +1,6 @@
+﻿<ser:complaintUpdateForInvoice xmlns:ser="http://voltran.local/InvoiceComplaint_v1.0">
+  <!-- Generated Sentinel template: state-changing; keep blocked until approved test data is ready. Align fields with the real WSDL contract. -->
+  <request>
+    <invoiceId>{{InvoiceId}}</invoiceId>
+  </request>
+</ser:complaintUpdateForInvoice>

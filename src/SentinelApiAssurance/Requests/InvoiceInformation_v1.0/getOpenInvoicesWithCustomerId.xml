@@ -1,0 +1,7 @@
+﻿<ser:getOpenInvoicesWithCustomerId xmlns:ser="http://voltran.local/InvoiceInformation_v1.0">
+  <!-- Generated Sentinel template: read-only candidate. Align fields with the real WSDL contract. -->
+  <request>
+    <customerId>{{CustomerId}}</customerId>
+    <invoiceId>{{InvoiceId}}</invoiceId>
+  </request>
+</ser:getOpenInvoicesWithCustomerId>

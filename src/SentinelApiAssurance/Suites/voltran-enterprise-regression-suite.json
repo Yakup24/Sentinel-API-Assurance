@@ -1,0 +1,3707 @@
+﻿{
+  "Name": "VOLTRAN Enterprise Regression Suite",
+  "Description": "Generated Sentinel API Assurance suite for the supplied VOLTRAN SOAP operation inventory.",
+  "Owner": "QA / Integration Team",
+  "Cases": [
+    {
+      "Id": "ADDRESSOPERA-001",
+      "Title": "AddressOperations_v1.0 / activateContactPhone",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "activateContactPhone",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/activateContactPhone.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-002",
+      "Title": "AddressOperations_v1.0 / compareAddressForMsisdnList",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "compareAddressForMsisdnList",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/compareAddressForMsisdnList.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-003",
+      "Title": "AddressOperations_v1.0 / deactivateContactPhone",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "deactivateContactPhone",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/deactivateContactPhone.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-004",
+      "Title": "AddressOperations_v1.0 / getAddressByAddressId",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getAddressByAddressId",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getAddressByAddressId.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-005",
+      "Title": "AddressOperations_v1.0 / getAddressByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getAddressByMsisdn",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getAddressByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-006",
+      "Title": "AddressOperations_v1.0 / getAddressByNcst",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getAddressByNcst",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getAddressByNcst.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-007",
+      "Title": "AddressOperations_v1.0 / getAddressByNprd",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getAddressByNprd",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getAddressByNprd.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-008",
+      "Title": "AddressOperations_v1.0 / getCityName",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getCityName",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getCityName.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-009",
+      "Title": "AddressOperations_v1.0 / getCommunicationInfoByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getCommunicationInfoByMsisdn",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getCommunicationInfoByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-010",
+      "Title": "AddressOperations_v1.0 / getGsmByNonPostalAddress",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getGsmByNonPostalAddress",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getGsmByNonPostalAddress.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-011",
+      "Title": "AddressOperations_v1.0 / getMergeAddressAndZipCode",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getMergeAddressAndZipCode",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getMergeAddressAndZipCode.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-012",
+      "Title": "AddressOperations_v1.0 / getProfessionalEmail",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getProfessionalEmail",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getProfessionalEmail.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-013",
+      "Title": "AddressOperations_v1.0 / getReferenceData",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getReferenceData",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getReferenceData.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-014",
+      "Title": "AddressOperations_v1.0 / getReferenceDataName",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "getReferenceDataName",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/getReferenceDataName.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-015",
+      "Title": "AddressOperations_v1.0 / upsertBillingAddressWithCoverAddress",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "upsertBillingAddressWithCoverAddress",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/upsertBillingAddressWithCoverAddress.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-016",
+      "Title": "AddressOperations_v1.0 / upsertNonPostalAddressByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "upsertNonPostalAddressByMsisdn",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/upsertNonPostalAddressByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-017",
+      "Title": "AddressOperations_v1.0 / upsertNonPostalAddressByNprd",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "upsertNonPostalAddressByNprd",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/upsertNonPostalAddressByNprd.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-018",
+      "Title": "AddressOperations_v1.0 / upsertPostalAddress",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "upsertPostalAddress",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/upsertPostalAddress.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "ADDRESSOPERA-019",
+      "Title": "AddressOperations_v1.0 / upsertProductAddress",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "AddressOperations_v1.0",
+      "Operation": "upsertProductAddress",
+      "RequestBodyFile": "Requests/AddressOperations_v1.0/upsertProductAddress.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-020",
+      "Title": "IndividualSingleInvoice_v1.0 / addMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "addMsisdn",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/addMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-021",
+      "Title": "IndividualSingleInvoice_v1.0 / cancelBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "cancelBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/cancelBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-022",
+      "Title": "IndividualSingleInvoice_v1.0 / getBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "getBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/getBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-023",
+      "Title": "IndividualSingleInvoice_v1.0 / isBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "isBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/isBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-024",
+      "Title": "IndividualSingleInvoice_v1.0 / numberChangeBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "numberChangeBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/numberChangeBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-025",
+      "Title": "IndividualSingleInvoice_v1.0 / removeMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "removeMsisdn",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/removeMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-026",
+      "Title": "IndividualSingleInvoice_v1.0 / setBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "setBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/setBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-027",
+      "Title": "IndividualSingleInvoice_v1.0 / submitAddMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "submitAddMsisdn",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/submitAddMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-028",
+      "Title": "IndividualSingleInvoice_v1.0 / submitBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "submitBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/submitBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-029",
+      "Title": "IndividualSingleInvoice_v1.0 / submitNumberChangeBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "submitNumberChangeBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/submitNumberChangeBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-030",
+      "Title": "IndividualSingleInvoice_v1.0 / submitRemoveMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "submitRemoveMsisdn",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/submitRemoveMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INDIVIDUALSI-031",
+      "Title": "IndividualSingleInvoice_v1.0 / validateSetBtf",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "IndividualSingleInvoice_v1.0",
+      "Operation": "validateSetBtf",
+      "RequestBodyFile": "Requests/IndividualSingleInvoice_v1.0/validateSetBtf.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEALARM-032",
+      "Title": "InvoiceAlarm_v1.0 / deactivationCustomer",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceAlarm_v1.0",
+      "Operation": "deactivationCustomer",
+      "RequestBodyFile": "Requests/InvoiceAlarm_v1.0/deactivationCustomer.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-033",
+      "Title": "InvoiceComplaint_v1.0 / complaintErrorLogWithMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "complaintErrorLogWithMsisdn",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/complaintErrorLogWithMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-034",
+      "Title": "InvoiceComplaint_v1.0 / complaintHistoryReadWithInvoiceID",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "complaintHistoryReadWithInvoiceID",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/complaintHistoryReadWithInvoiceID.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-035",
+      "Title": "InvoiceComplaint_v1.0 / complaintLogReadWithSeqNo",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "complaintLogReadWithSeqNo",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/complaintLogReadWithSeqNo.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-036",
+      "Title": "InvoiceComplaint_v1.0 / complaintSetForInvoice",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "complaintSetForInvoice",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/complaintSetForInvoice.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-037",
+      "Title": "InvoiceComplaint_v1.0 / complaintStatusWithMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "complaintStatusWithMsisdn",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/complaintStatusWithMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-038",
+      "Title": "InvoiceComplaint_v1.0 / complaintUnSetForInvoice",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "complaintUnSetForInvoice",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/complaintUnSetForInvoice.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-039",
+      "Title": "InvoiceComplaint_v1.0 / complaintUpdateForInvoice",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "complaintUpdateForInvoice",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/complaintUpdateForInvoice.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICECOMPL-040",
+      "Title": "InvoiceComplaint_v1.0 / listComplaintReason",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceComplaint_v1.0",
+      "Operation": "listComplaintReason",
+      "RequestBodyFile": "Requests/InvoiceComplaint_v1.0/listComplaintReason.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-041",
+      "Title": "InvoiceInformation_v1.0 / accordBillingForDeactivation",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "accordBillingForDeactivation",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/accordBillingForDeactivation.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-042",
+      "Title": "InvoiceInformation_v1.0 / callUsageWithInvoiceIDRead",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "callUsageWithInvoiceIDRead",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/callUsageWithInvoiceIDRead.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-043",
+      "Title": "InvoiceInformation_v1.0 / faturaCellSMS",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "faturaCellSMS",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/faturaCellSMS.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-044",
+      "Title": "InvoiceInformation_v1.0 / getChangesListInSegmentWithCustomerID",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getChangesListInSegmentWithCustomerID",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getChangesListInSegmentWithCustomerID.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-045",
+      "Title": "InvoiceInformation_v1.0 / getFirstInvoiceDate",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getFirstInvoiceDate",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getFirstInvoiceDate.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-046",
+      "Title": "InvoiceInformation_v1.0 / getGeneralInfoOnSegmentWithSeqmentId",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getGeneralInfoOnSegmentWithSeqmentId",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getGeneralInfoOnSegmentWithSeqmentId.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-047",
+      "Title": "InvoiceInformation_v1.0 / getInvoiceDetailServiceName",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getInvoiceDetailServiceName",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getInvoiceDetailServiceName.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-048",
+      "Title": "InvoiceInformation_v1.0 / getInvoiceDiscountsByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getInvoiceDiscountsByMsisdn",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getInvoiceDiscountsByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-049",
+      "Title": "InvoiceInformation_v1.0 / getInvoiceReadWithCustomerId",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getInvoiceReadWithCustomerId",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getInvoiceReadWithCustomerId.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-050",
+      "Title": "InvoiceInformation_v1.0 / getNextInvoiceAndDueDate",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getNextInvoiceAndDueDate",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getNextInvoiceAndDueDate.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-051",
+      "Title": "InvoiceInformation_v1.0 / getOpenInvoicesWithCustomerId",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getOpenInvoicesWithCustomerId",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getOpenInvoicesWithCustomerId.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-052",
+      "Title": "InvoiceInformation_v1.0 / getPrivateLaFromCustcode",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getPrivateLaFromCustcode",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getPrivateLaFromCustcode.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-053",
+      "Title": "InvoiceInformation_v1.0 / getRealNextBillingDate",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getRealNextBillingDate",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getRealNextBillingDate.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-054",
+      "Title": "InvoiceInformation_v1.0 / getRemainingTaxes",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "getRemainingTaxes",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/getRemainingTaxes.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-055",
+      "Title": "InvoiceInformation_v1.0 / invoiceDigerKalemList",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "invoiceDigerKalemList",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/invoiceDigerKalemList.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-056",
+      "Title": "InvoiceInformation_v1.0 / invoiceKalemDetay",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "invoiceKalemDetay",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/invoiceKalemDetay.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-057",
+      "Title": "InvoiceInformation_v1.0 / invoiceVergiliKalemList",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "invoiceVergiliKalemList",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/invoiceVergiliKalemList.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-058",
+      "Title": "InvoiceInformation_v1.0 / queryKtfFromMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "queryKtfFromMsisdn",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/queryKtfFromMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-059",
+      "Title": "InvoiceInformation_v1.0 / readCdFaturaSubscriptions",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "readCdFaturaSubscriptions",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/readCdFaturaSubscriptions.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-060",
+      "Title": "InvoiceInformation_v1.0 / readInvoiceFeesByCustomerID",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "readInvoiceFeesByCustomerID",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/readInvoiceFeesByCustomerID.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-061",
+      "Title": "InvoiceInformation_v1.0 / readInvoiceInterest",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "readInvoiceInterest",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/readInvoiceInterest.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-062",
+      "Title": "InvoiceInformation_v1.0 / sfGetHaveEfatura",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "sfGetHaveEfatura",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/sfGetHaveEfatura.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-063",
+      "Title": "InvoiceInformation_v1.0 / sfGetHaveNotEfatura",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "sfGetHaveNotEfatura",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/sfGetHaveNotEfatura.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICEINFOR-064",
+      "Title": "InvoiceInformation_v1.0 / vergiliKalemList",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceInformation_v1.0",
+      "Operation": "vergiliKalemList",
+      "RequestBodyFile": "Requests/InvoiceInformation_v1.0/vergiliKalemList.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "INVOICETYPE-065",
+      "Title": "InvoiceType_v1.0 / getInvoiceTypeWithNcst",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "InvoiceType_v1.0",
+      "Operation": "getInvoiceTypeWithNcst",
+      "RequestBodyFile": "Requests/InvoiceType_v1.0/getInvoiceTypeWithNcst.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-066",
+      "Title": "ProductQuery_v1.0 / checkSubscriptionTime",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "checkSubscriptionTime",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/checkSubscriptionTime.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-067",
+      "Title": "ProductQuery_v1.0 / checkTenureAge",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "checkTenureAge",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/checkTenureAge.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-068",
+      "Title": "ProductQuery_v1.0 / findProductStatusByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "findProductStatusByMsisdn",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/findProductStatusByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-069",
+      "Title": "ProductQuery_v1.0 / getMainCoverProductIdByNcst",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "getMainCoverProductIdByNcst",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/getMainCoverProductIdByNcst.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-070",
+      "Title": "ProductQuery_v1.0 / getProductDetailWithCustomerByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "getProductDetailWithCustomerByMsisdn",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/getProductDetailWithCustomerByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-071",
+      "Title": "ProductQuery_v1.0 / getProductIdByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "getProductIdByMsisdn",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/getProductIdByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-072",
+      "Title": "ProductQuery_v1.0 / isLastProductOfMsisdnActive",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "isLastProductOfMsisdnActive",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/isLastProductOfMsisdnActive.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTQUERY-073",
+      "Title": "ProductQuery_v1.0 / searchProducts",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductQuery_v1.0",
+      "Operation": "searchProducts",
+      "RequestBodyFile": "Requests/ProductQuery_v1.0/searchProducts.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SERVICEPRODU-074",
+      "Title": "ServiceProductQuery_v1.0 / getServiceSubscriptions",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ServiceProductQuery_v1.0",
+      "Operation": "getServiceSubscriptions",
+      "RequestBodyFile": "Requests/ServiceProductQuery_v1.0/getServiceSubscriptions.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SERVICEPRODU-075",
+      "Title": "ServiceProductQuery_v1.0 / getXBOXServices",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ServiceProductQuery_v1.0",
+      "Operation": "getXBOXServices",
+      "RequestBodyFile": "Requests/ServiceProductQuery_v1.0/getXBOXServices.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SERVICEPRODU-076",
+      "Title": "ServiceProductQuery_v1.0 / isServiceSubscriber",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ServiceProductQuery_v1.0",
+      "Operation": "isServiceSubscriber",
+      "RequestBodyFile": "Requests/ServiceProductQuery_v1.0/isServiceSubscriber.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-077",
+      "Title": "SimCardQuery_v1.0 / getIMSIBySimNo",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "getIMSIBySimNo",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/getIMSIBySimNo.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-078",
+      "Title": "SimCardQuery_v1.0 / getSimInfo",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "getSimInfo",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/getSimInfo.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-079",
+      "Title": "SimCardQuery_v1.0 / getSimcardChangeReasons",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "getSimcardChangeReasons",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/getSimcardChangeReasons.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-080",
+      "Title": "SimCardQuery_v1.0 / isSimCardDualWithMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "isSimCardDualWithMsisdn",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/isSimCardDualWithMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-081",
+      "Title": "SimCardQuery_v1.0 / isSimCardDualWithSimCardNo",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "isSimCardDualWithSimCardNo",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/isSimCardDualWithSimCardNo.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-082",
+      "Title": "SimCardQuery_v1.0 / postpaidNumberSearch",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "postpaidNumberSearch",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/postpaidNumberSearch.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-083",
+      "Title": "SimCardQuery_v1.0 / prepaidNumberSearch",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "prepaidNumberSearch",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/prepaidNumberSearch.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-084",
+      "Title": "SimCardQuery_v1.0 / readCampaign",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readCampaign",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readCampaign.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-085",
+      "Title": "SimCardQuery_v1.0 / readCampaignDetailsWithSimNo",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readCampaignDetailsWithSimNo",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readCampaignDetailsWithSimNo.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-086",
+      "Title": "SimCardQuery_v1.0 / readProductName",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readProductName",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readProductName.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-087",
+      "Title": "SimCardQuery_v1.0 / readResourceAvailableInfoBySimNo",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readResourceAvailableInfoBySimNo",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readResourceAvailableInfoBySimNo.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-088",
+      "Title": "SimCardQuery_v1.0 / readSimCardHistory",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readSimCardHistory",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readSimCardHistory.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-089",
+      "Title": "SimCardQuery_v1.0 / readSimCardType",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readSimCardType",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readSimCardType.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-090",
+      "Title": "SimCardQuery_v1.0 / readSimHlrCode",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readSimHlrCode",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readSimHlrCode.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-091",
+      "Title": "SimCardQuery_v1.0 / readSimStatus",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "readSimStatus",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/readSimStatus.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "SIMCARDQUERY-092",
+      "Title": "SimCardQuery_v1.0 / simReservationCorrection",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SimCardQuery_v1.0",
+      "Operation": "simReservationCorrection",
+      "RequestBodyFile": "Requests/SimCardQuery_v1.0/simReservationCorrection.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-093",
+      "Title": "NumberStoragePlan_v1.0 / checkSIMType",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "checkSIMType",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/checkSIMType.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-094",
+      "Title": "NumberStoragePlan_v1.0 / getNewSubscribersDealerId",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "getNewSubscribersDealerId",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/getNewSubscribersDealerId.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-095",
+      "Title": "NumberStoragePlan_v1.0 / getPrepaidHandoverQuota",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "getPrepaidHandoverQuota",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/getPrepaidHandoverQuota.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-096",
+      "Title": "NumberStoragePlan_v1.0 / getRestoreQuota",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "getRestoreQuota",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/getRestoreQuota.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-097",
+      "Title": "NumberStoragePlan_v1.0 / getTicketPTForNewNetwork",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "getTicketPTForNewNetwork",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/getTicketPTForNewNetwork.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-098",
+      "Title": "NumberStoragePlan_v1.0 / loadCodeValues",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "loadCodeValues",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/loadCodeValues.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-099",
+      "Title": "NumberStoragePlan_v1.0 / loadPooList",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "loadPooList",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/loadPooList.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-100",
+      "Title": "NumberStoragePlan_v1.0 / loadForMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "loadForMsisdn",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/loadForMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "NUMBERSTORAG-101",
+      "Title": "NumberStoragePlan_v1.0 / msisdnInfo",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "NumberStoragePlan_v1.0",
+      "Operation": "msisdnInfo",
+      "RequestBodyFile": "Requests/NumberStoragePlan_v1.0/msisdnInfo.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "GPRSONOFF-102",
+      "Title": "GPRSOnOff_v1.0 / createOrder",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "GPRSOnOff_v1.0",
+      "Operation": "createOrder",
+      "RequestBodyFile": "Requests/GPRSOnOff_v1.0/createOrder.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "GPRSONOFF-103",
+      "Title": "GPRSOnOff_v1.0 / submitOrder",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "GPRSOnOff_v1.0",
+      "Operation": "submitOrder",
+      "RequestBodyFile": "Requests/GPRSOnOff_v1.0/submitOrder.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "SMSBARRING-104",
+      "Title": "SMSBarring_v1.0 / submitOrder",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "SMSBarring_v1.0",
+      "Operation": "submitOrder",
+      "RequestBodyFile": "Requests/SMSBarring_v1.0/submitOrder.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-105",
+      "Title": "VirtualMsisdnOperations_v1.0 / createVirtualMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdnOperations_v1.0",
+      "Operation": "createVirtualMsisdn",
+      "RequestBodyFile": "Requests/VirtualMsisdnOperations_v1.0/createVirtualMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-106",
+      "Title": "VirtualMsisdnOperations_v1.0 / deactivateVirtualMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdnOperations_v1.0",
+      "Operation": "deactivateVirtualMsisdn",
+      "RequestBodyFile": "Requests/VirtualMsisdnOperations_v1.0/deactivateVirtualMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-107",
+      "Title": "VirtualMsisdnOperations_v1.0 / getVirtualMsisdnList",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdnOperations_v1.0",
+      "Operation": "getVirtualMsisdnList",
+      "RequestBodyFile": "Requests/VirtualMsisdnOperations_v1.0/getVirtualMsisdnList.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-108",
+      "Title": "VirtualMsisdnOperations_v1.0 / insertVirtualRoot",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdnOperations_v1.0",
+      "Operation": "insertVirtualRoot",
+      "RequestBodyFile": "Requests/VirtualMsisdnOperations_v1.0/insertVirtualRoot.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-109",
+      "Title": "VirtualMsisdnOperations_v1.0 / setPrimeNumberOfVirtualMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdnOperations_v1.0",
+      "Operation": "setPrimeNumberOfVirtualMsisdn",
+      "RequestBodyFile": "Requests/VirtualMsisdnOperations_v1.0/setPrimeNumberOfVirtualMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-110",
+      "Title": "VirtualMsisdn_v1.0 / boCallBackForVirtualMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "boCallBackForVirtualMsisdn",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/boCallBackForVirtualMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-111",
+      "Title": "VirtualMsisdn_v1.0 / deactivateAllVirtualMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "deactivateAllVirtualMsisdn",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/deactivateAllVirtualMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-112",
+      "Title": "VirtualMsisdn_v1.0 / getWholeSaleOfferSubscription",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "getWholeSaleOfferSubscription",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/getWholeSaleOfferSubscription.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-113",
+      "Title": "VirtualMsisdn_v1.0 / isVirtualMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "isVirtualMsisdn",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/isVirtualMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-114",
+      "Title": "VirtualMsisdn_v1.0 / submitOrder",
+      "Active": false,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "submitOrder",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/submitOrder.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-115",
+      "Title": "VirtualMsisdn_v1.0 / updateWholeSaleOfferSubscriptions",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "updateWholeSaleOfferSubscriptions",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/updateWholeSaleOfferSubscriptions.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-116",
+      "Title": "VirtualMsisdn_v1.0 / createVirtualMsisdnOrder",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "createVirtualMsisdnOrder",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/createVirtualMsisdnOrder.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "VIRTUALMSISD-117",
+      "Title": "VirtualMsisdn_v1.0 / isVirtualDeactivationRequiredByMsisdn",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "VirtualMsisdn_v1.0",
+      "Operation": "isVirtualDeactivationRequiredByMsisdn",
+      "RequestBodyFile": "Requests/VirtualMsisdn_v1.0/isVirtualDeactivationRequiredByMsisdn.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTTYPEC-118",
+      "Title": "ProductTypeChange_v1.0 / createOrder",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductTypeChange_v1.0",
+      "Operation": "createOrder",
+      "RequestBodyFile": "Requests/ProductTypeChange_v1.0/createOrder.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTTYPEC-119",
+      "Title": "ProductTypeChange_v1.0 / informManageSDPAResult",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductTypeChange_v1.0",
+      "Operation": "informManageSDPAResult",
+      "RequestBodyFile": "Requests/ProductTypeChange_v1.0/informManageSDPAResult.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTTYPEC-120",
+      "Title": "ProductTypeChange_v1.0 / informOfferProvisiningResult",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductTypeChange_v1.0",
+      "Operation": "informOfferProvisiningResult",
+      "RequestBodyFile": "Requests/ProductTypeChange_v1.0/informOfferProvisiningResult.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTTYPEC-121",
+      "Title": "ProductTypeChange_v1.0 / informTariffChangeResult",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductTypeChange_v1.0",
+      "Operation": "informTariffChangeResult",
+      "RequestBodyFile": "Requests/ProductTypeChange_v1.0/informTariffChangeResult.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTTYPEC-122",
+      "Title": "ProductTypeChange_v1.0 / submitOrder",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductTypeChange_v1.0",
+      "Operation": "submitOrder",
+      "RequestBodyFile": "Requests/ProductTypeChange_v1.0/submitOrder.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTTYPEC-123",
+      "Title": "ProductTypeChange_v1.0 / onResult",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductTypeChange_v1.0",
+      "Operation": "onResult",
+      "RequestBodyFile": "Requests/ProductTypeChange_v1.0/onResult.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "PRODUCTTYPEC-124",
+      "Title": "ProductTypeChange_v1.0 / validate",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "ProductTypeChange_v1.0",
+      "Operation": "validate",
+      "RequestBodyFile": "Requests/ProductTypeChange_v1.0/validate.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "USERINTERFAC-125",
+      "Title": "UserInterfaceConfirmation_v1.0 / createConfirmation",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "UserInterfaceConfirmation_v1.0",
+      "Operation": "createConfirmation",
+      "RequestBodyFile": "Requests/UserInterfaceConfirmation_v1.0/createConfirmation.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "USERINTERFAC-126",
+      "Title": "UserInterfaceConfirmation_v1.0 / getConfirmation",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "UserInterfaceConfirmation_v1.0",
+      "Operation": "getConfirmation",
+      "RequestBodyFile": "Requests/UserInterfaceConfirmation_v1.0/getConfirmation.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "USERINTERFAC-127",
+      "Title": "UserInterfaceConfirmation_v1.0 / updateConfirmation",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "UserInterfaceConfirmation_v1.0",
+      "Operation": "updateConfirmation",
+      "RequestBodyFile": "Requests/UserInterfaceConfirmation_v1.0/updateConfirmation.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 10000
+        }
+      ]
+    },
+    {
+      "Id": "USERINTERFAC-128",
+      "Title": "UserInterfaceConfirmation_v1.0 / validatePassword",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "UserInterfaceConfirmation_v1.0",
+      "Operation": "validatePassword",
+      "RequestBodyFile": "Requests/UserInterfaceConfirmation_v1.0/validatePassword.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "USERINTERFAC-129",
+      "Title": "UserInterfaceSearch_v1.0 / productDetailSearch",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "UserInterfaceSearch_v1.0",
+      "Operation": "productDetailSearch",
+      "RequestBodyFile": "Requests/UserInterfaceSearch_v1.0/productDetailSearch.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "WORKTRANSACT-130",
+      "Title": "WorkTransactionHistory_v1.0 / getWorkTransactionHistoryRecords",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "WorkTransactionHistory_v1.0",
+      "Operation": "getWorkTransactionHistoryRecords",
+      "RequestBodyFile": "Requests/WorkTransactionHistory_v1.0/getWorkTransactionHistoryRecords.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-131",
+      "Title": "OrganizationReferenceOperations_v1.0 / getAllCostCenters",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getAllCostCenters",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getAllCostCenters.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-132",
+      "Title": "OrganizationReferenceOperations_v1.0 / getAllSubDealersForCostCenters",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getAllSubDealersForCostCenters",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getAllSubDealersForCostCenters.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-133",
+      "Title": "OrganizationReferenceOperations_v1.0 / getAlternativeSaleCostCenters",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getAlternativeSaleCostCenters",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getAlternativeSaleCostCenters.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-134",
+      "Title": "OrganizationReferenceOperations_v1.0 / getAlternativeSaleCostCentersByPosition",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getAlternativeSaleCostCentersByPosition",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getAlternativeSaleCostCentersByPosition.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-135",
+      "Title": "OrganizationReferenceOperations_v1.0 / getBranchesOfFirm",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getBranchesOfFirm",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getBranchesOfFirm.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-136",
+      "Title": "OrganizationReferenceOperations_v1.0 / getContactInfoByLdapName",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getContactInfoByLdapName",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getContactInfoByLdapName.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-137",
+      "Title": "OrganizationReferenceOperations_v1.0 / getCostCentersByPrefix",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getCostCentersByPrefix",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getCostCentersByPrefix.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-138",
+      "Title": "OrganizationReferenceOperations_v1.0 / getCostCentersByType",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getCostCentersByType",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getCostCentersByType.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-139",
+      "Title": "OrganizationReferenceOperations_v1.0 / getDealersOfSubDealer",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getDealersOfSubDealer",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getDealersOfSubDealer.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-140",
+      "Title": "OrganizationReferenceOperations_v1.0 / getGlobalCostCenters",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getGlobalCostCenters",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getGlobalCostCenters.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-141",
+      "Title": "OrganizationReferenceOperations_v1.0 / getOrganizationCodes",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getOrganizationCodes",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getOrganizationCodes.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-142",
+      "Title": "OrganizationReferenceOperations_v1.0 / getOrganizationCodesWithAll",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getOrganizationCodesWithAll",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getOrganizationCodesWithAll.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-143",
+      "Title": "OrganizationReferenceOperations_v1.0 / getPositionInformation",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getPositionInformation",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getPositionInformation.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-144",
+      "Title": "OrganizationReferenceOperations_v1.0 / getRelatedCostCenters",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getRelatedCostCenters",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getRelatedCostCenters.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-145",
+      "Title": "OrganizationReferenceOperations_v1.0 / getSubDealersOfDealer",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getSubDealersOfDealer",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getSubDealersOfDealer.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "ORGANIZATION-146",
+      "Title": "OrganizationReferenceOperations_v1.0 / getSubdealerCodes",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "OrganizationReferenceOperations_v1.0",
+      "Operation": "getSubdealerCodes",
+      "RequestBodyFile": "Requests/OrganizationReferenceOperations_v1.0/getSubdealerCodes.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "MENUINVENTOR-147",
+      "Title": "MenuInventory_v1.0 / getMenuItems",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "MenuInventory_v1.0",
+      "Operation": "getMenuItems",
+      "RequestBodyFile": "Requests/MenuInventory_v1.0/getMenuItems.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    },
+    {
+      "Id": "MENUINVENTOR-148",
+      "Title": "MenuInventory_v1.0 / getSecureUrlsWithRoles",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "MenuInventory_v1.0",
+      "Operation": "getSecureUrlsWithRoles",
+      "RequestBodyFile": "Requests/MenuInventory_v1.0/getSecureUrlsWithRoles.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Headers": {},
+      "Assertions": [
+        {
+          "Type": "NoSoapFault"
+        },
+        {
+          "Type": "NotContains",
+          "Value": "Exception"
+        },
+        {
+          "Type": "MaxDurationMs",
+          "MaxDurationMs": 5000
+        }
+      ]
+    }
+  ]
+}

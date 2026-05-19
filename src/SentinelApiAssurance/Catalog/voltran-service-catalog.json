@@ -1,0 +1,1038 @@
+[
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "activateContactPhone",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "compareAddressForMsisdnList",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "deactivateContactPhone",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getAddressByAddressId",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getAddressByMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getAddressByNcst",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getAddressByNprd",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getCityName",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getCommunicationInfoByMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getGsmByNonPostalAddress",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getMergeAddressAndZipCode",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getProfessionalEmail",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getReferenceData",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "getReferenceDataName",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "upsertBillingAddressWithCoverAddress",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "upsertNonPostalAddressByMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "upsertNonPostalAddressByNprd",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "upsertPostalAddress",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "AddressOperations_v1.0",
+    "operation": "upsertProductAddress",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "addMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "cancelBtf",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "getBtf",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "isBtf",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "numberChangeBtf",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "removeMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "setBtf",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "submitAddMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "submitBtf",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "submitNumberChangeBtf",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "submitRemoveMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "IndividualSingleInvoice_v1.0",
+    "operation": "validateSetBtf",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceAlarm_v1.0",
+    "operation": "deactivationCustomer",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "complaintErrorLogWithMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "complaintHistoryReadWithInvoiceID",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "complaintLogReadWithSeqNo",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "complaintSetForInvoice",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "complaintStatusWithMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "complaintUnSetForInvoice",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "complaintUpdateForInvoice",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceComplaint_v1.0",
+    "operation": "listComplaintReason",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "accordBillingForDeactivation",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "callUsageWithInvoiceIDRead",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "faturaCellSMS",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getChangesListInSegmentWithCustomerID",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getFirstInvoiceDate",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getGeneralInfoOnSegmentWithSeqmentId",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getInvoiceDetailServiceName",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getInvoiceDiscountsByMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getInvoiceReadWithCustomerId",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getNextInvoiceAndDueDate",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getOpenInvoicesWithCustomerId",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getPrivateLaFromCustcode",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getRealNextBillingDate",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "getRemainingTaxes",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "invoiceDigerKalemList",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "invoiceKalemDetay",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "invoiceVergiliKalemList",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "queryKtfFromMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "readCdFaturaSubscriptions",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "readInvoiceFeesByCustomerID",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "readInvoiceInterest",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "sfGetHaveEfatura",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "sfGetHaveNotEfatura",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceInformation_v1.0",
+    "operation": "vergiliKalemList",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "InvoiceType_v1.0",
+    "operation": "getInvoiceTypeWithNcst",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "checkSubscriptionTime",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "checkTenureAge",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "findProductStatusByMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "getMainCoverProductIdByNcst",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "getProductDetailWithCustomerByMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "getProductIdByMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "isLastProductOfMsisdnActive",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductQuery_v1.0",
+    "operation": "searchProducts",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ServiceProductQuery_v1.0",
+    "operation": "getServiceSubscriptions",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ServiceProductQuery_v1.0",
+    "operation": "getXBOXServices",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ServiceProductQuery_v1.0",
+    "operation": "isServiceSubscriber",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "getIMSIBySimNo",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "getSimInfo",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "getSimcardChangeReasons",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "isSimCardDualWithMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "isSimCardDualWithSimCardNo",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "postpaidNumberSearch",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "prepaidNumberSearch",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readCampaign",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readCampaignDetailsWithSimNo",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readProductName",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readResourceAvailableInfoBySimNo",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readSimCardHistory",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readSimCardType",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readSimHlrCode",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "readSimStatus",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SimCardQuery_v1.0",
+    "operation": "simReservationCorrection",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "checkSIMType",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "getNewSubscribersDealerId",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "getPrepaidHandoverQuota",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "getRestoreQuota",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "getTicketPTForNewNetwork",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "loadCodeValues",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "loadPooList",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "loadForMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "NumberStoragePlan_v1.0",
+    "operation": "msisdnInfo",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "GPRSOnOff_v1.0",
+    "operation": "createOrder",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "GPRSOnOff_v1.0",
+    "operation": "submitOrder",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "SMSBarring_v1.0",
+    "operation": "submitOrder",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdnOperations_v1.0",
+    "operation": "createVirtualMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdnOperations_v1.0",
+    "operation": "deactivateVirtualMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdnOperations_v1.0",
+    "operation": "getVirtualMsisdnList",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdnOperations_v1.0",
+    "operation": "insertVirtualRoot",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdnOperations_v1.0",
+    "operation": "setPrimeNumberOfVirtualMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "boCallBackForVirtualMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "deactivateAllVirtualMsisdn",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "getWholeSaleOfferSubscription",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "isVirtualMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "submitOrder",
+    "active": false,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "updateWholeSaleOfferSubscriptions",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "createVirtualMsisdnOrder",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "VirtualMsisdn_v1.0",
+    "operation": "isVirtualDeactivationRequiredByMsisdn",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductTypeChange_v1.0",
+    "operation": "createOrder",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductTypeChange_v1.0",
+    "operation": "informManageSDPAResult",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductTypeChange_v1.0",
+    "operation": "informOfferProvisiningResult",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductTypeChange_v1.0",
+    "operation": "informTariffChangeResult",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductTypeChange_v1.0",
+    "operation": "submitOrder",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductTypeChange_v1.0",
+    "operation": "onResult",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "ProductTypeChange_v1.0",
+    "operation": "validate",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "UserInterfaceConfirmation_v1.0",
+    "operation": "createConfirmation",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "UserInterfaceConfirmation_v1.0",
+    "operation": "getConfirmation",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "UserInterfaceConfirmation_v1.0",
+    "operation": "updateConfirmation",
+    "active": true,
+    "stateChanging": true,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "UserInterfaceConfirmation_v1.0",
+    "operation": "validatePassword",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "UserInterfaceSearch_v1.0",
+    "operation": "productDetailSearch",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "WorkTransactionHistory_v1.0",
+    "operation": "getWorkTransactionHistoryRecords",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getAllCostCenters",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getAllSubDealersForCostCenters",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getAlternativeSaleCostCenters",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getAlternativeSaleCostCentersByPosition",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getBranchesOfFirm",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getContactInfoByLdapName",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getCostCentersByPrefix",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getCostCentersByType",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getDealersOfSubDealer",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getGlobalCostCenters",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getOrganizationCodes",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getOrganizationCodesWithAll",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getPositionInformation",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getRelatedCostCenters",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getSubDealersOfDealer",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "OrganizationReferenceOperations_v1.0",
+    "operation": "getSubdealerCodes",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "MenuInventory_v1.0",
+    "operation": "getMenuItems",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  },
+  {
+    "service": "MenuInventory_v1.0",
+    "operation": "getSecureUrlsWithRoles",
+    "active": true,
+    "stateChanging": false,
+    "source": "user-supplied VOLTRAN uncovered/covered operation inventory"
+  }
+]
