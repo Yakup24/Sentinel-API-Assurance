@@ -133,3 +133,7 @@ Kosum sonunda `bin/Debug/net8.0/Reports` altina su raporlar yazilir:
 - CSV result
 
 HTML raporda genel sonuc ve servis bazli ozet bulunur.
+
+## License
+
+This project is licensed under the MIT License. See [LICENSE](LICENSE).
