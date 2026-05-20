@@ -1,0 +1,5 @@
+{
+  "_comment": "Example only. Do not place real tokens, customer data or internal endpoint details here.",
+  "customerId": "{{CustomerId}}",
+  "correlationId": "{{CorrelationId}}"
+}

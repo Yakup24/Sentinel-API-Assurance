@@ -1,0 +1,7 @@
+<!-- Example only. Replace fields with values from a safe test environment. -->
+<ser:GetCustomer xmlns:ser="https://example.test/contracts/customer/v1">
+  <request>
+    <customerId>{{CustomerId}}</customerId>
+    <correlationId>{{CorrelationId}}</correlationId>
+  </request>
+</ser:GetCustomer>

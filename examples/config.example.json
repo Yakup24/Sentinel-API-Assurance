@@ -1,0 +1,37 @@
+{
+  "_comment": "Example only. Use placeholders and environment variables instead of real credentials.",
+  "DefaultEnvironment": "demo",
+  "DefaultSuitePath": "Suites/customer-smoke-suite.json",
+  "ReportDirectory": "Reports",
+  "TimeoutSeconds": 30,
+  "RetryCount": 1,
+  "RetryDelayMs": 500,
+  "BlockDangerousOperationsWithoutExplicitApproval": true,
+  "GlobalHeaders": {
+    "X-Correlation-Id": "{{CorrelationId}}",
+    "Authorization": "Bearer {{ENV:SENTINEL_API_TOKEN}}"
+  },
+  "TestData": {
+    "CorrelationId": "DEMO-RUN-001",
+    "CustomerId": "CUST-DEMO-001",
+    "OrderId": "ORD-DEMO-001"
+  },
+  "Environments": [
+    {
+      "Name": "demo",
+      "BaseUrl": "https://api.example.test",
+      "Services": {
+        "CustomerService_v1": {
+          "Endpoint": "soap/customer/v1",
+          "SoapVersion": "1.1",
+          "SoapActionFormat": "{service}/{operation}",
+          "Headers": {}
+        },
+        "OrderApi": {
+          "Endpoint": "rest",
+          "Headers": {}
+        }
+      }
+    }
+  ]
+}

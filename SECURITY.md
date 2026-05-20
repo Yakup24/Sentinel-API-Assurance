@@ -26,24 +26,36 @@ When reporting, include as much detail as possible:
 - Any logs, proof of concept, or screenshots that help explain the issue
 - Suggested fix, if you already have one
 
-## Response Expectations
-
 The maintainer will try to acknowledge valid security reports within 7 days. Accepted vulnerabilities will be investigated and fixed in the default branch as soon as reasonably possible.
 
-If the report is accepted, the fix may be handled privately until a patch is available. If the report is declined, the maintainer will explain why it is not considered a security issue.
+## Secret Management
 
-## Scope
+Do not commit real service credentials, API tokens, customer data, or internal endpoint details.
 
-Security reports are most useful when they involve:
+Use placeholders in committed configuration and inject sensitive values at runtime through environment variables:
 
-- Secret leakage or unsafe handling of credentials
-- Unsafe logging of sensitive data such as MSISDN, customer IDs, tokens, or invoice identifiers
-- Unsafe default behavior that can trigger state-changing SOAP/API operations
-- CI/CD configuration risks
-- XML, SOAP, or request-template handling issues
+```xml
+<token>{{ENV:SENTINEL_API_TOKEN}}</token>
+```
 
-Out of scope:
+## Sensitive Data Handling
 
-- Vulnerabilities caused only by intentionally modified local configuration
-- Findings that require access to private systems without authorization
-- Denial-of-service tests against real service environments
+Examples, suites, and request templates should use synthetic identifiers only. Avoid storing real MSISDN values, customer IDs, invoice IDs, LDAP names, access tokens, or internal hostnames.
+
+Current limitation: log masking is not implemented. Do not run with sensitive request data until masking is added or logs are controlled by environment policy.
+
+## Risky Operation Policy
+
+State-changing operations are blocked by default through `OperationSafetyPolicy`. Operations containing keywords such as `create`, `update`, `delete`, `deactivate`, `payment`, or `submit` require explicit case-level approval.
+
+Use `AllowStateChangingOperation=true` only with approved test data and controlled non-production services.
+
+## Production Usage Warning
+
+This framework is not intended to trigger destructive production operations without explicit approval, controlled test data, and environment-specific safety controls.
+
+## Out Of Scope
+
+- Findings that require unauthorized access to third-party systems
+- Denial-of-service testing against live service environments
+- Issues caused only by intentionally modified unsafe local configuration

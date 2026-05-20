@@ -1,0 +1,19 @@
+Sentinel API Assurance - Demo Execution
+
+Suite: customer-smoke-tests
+Environment: demo
+Dry-run: enabled
+
+[PASS] SOAP-CUSTOMER-001 - Get customer by id
+[PASS] REST-ORDER-001 - Get order summary
+[SKIP] SOAP-CUSTOMER-DELETE-001 - Risky operation blocked
+
+Summary:
+Total: 3
+Passed: 2
+Failed: 0
+Skipped: 1
+
+Reports:
+- reports/latest/report.json
+- reports/latest/report.csv

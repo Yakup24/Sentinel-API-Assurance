@@ -1,0 +1,38 @@
+{
+  "_comment": "Example only. Uses placeholder services, paths and data.",
+  "Name": "customer-smoke-tests",
+  "Description": "Demo smoke suite for safe SOAP and REST checks.",
+  "Owner": "QA Automation",
+  "Cases": [
+    {
+      "Id": "SOAP-CUSTOMER-001",
+      "Title": "Get customer by id",
+      "Active": true,
+      "Protocol": "SOAP",
+      "Service": "CustomerService_v1",
+      "Operation": "GetCustomer",
+      "RequestBodyFile": "Requests/CustomerService_v1/GetCustomer.xml",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Assertions": [
+        { "Type": "NoSoapFault" },
+        { "Type": "XmlElementExists", "ElementName": "customerId" }
+      ]
+    },
+    {
+      "Id": "REST-ORDER-001",
+      "Title": "Get order summary",
+      "Active": true,
+      "Protocol": "REST",
+      "Service": "OrderApi",
+      "Operation": "GetOrderSummary",
+      "HttpMethod": "GET",
+      "Path": "/api/orders/{{OrderId}}",
+      "ExpectedHttpStatus": 200,
+      "AllowStateChangingOperation": false,
+      "Assertions": [
+        { "Type": "JsonFieldExists", "ElementName": "order.id" }
+      ]
+    }
+  ]
+}

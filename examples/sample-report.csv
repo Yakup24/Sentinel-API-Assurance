@@ -1,0 +1,4 @@
+# Example only. This is not a real execution result.
+Status;Service;Operation;Protocol;HttpStatus;DurationMs;RequestFile;Message
+"Passed";"CustomerService_v1";"GetCustomer";"SOAP";"200";"42";"Requests/CustomerService_v1/GetCustomer.xml";"Test passed."
+"Skipped";"CustomerService_v1";"DeleteCustomer";"SOAP";"";"0";"Requests/CustomerService_v1/DeleteCustomer.xml";"State-changing operation blocked."

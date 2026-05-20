@@ -1,0 +1,39 @@
+name: CI
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest
+
+    env:
+      DOTNET_SOLUTION: SentinelApiAssurance.sln
+      DOTNET_PROJECT: src/SentinelApiAssurance/SentinelApiAssurance.csproj
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: "8.0.x"
+
+      - name: Restore dependencies
+        run: dotnet restore "$DOTNET_SOLUTION"
+
+      - name: Verify formatting
+        run: dotnet format "$DOTNET_SOLUTION" --verify-no-changes --no-restore
+
+      - name: Build
+        run: dotnet build "$DOTNET_SOLUTION" --configuration Release --no-restore
+
+      - name: Test
+        run: dotnet test "$DOTNET_SOLUTION" --configuration Release --no-build --verbosity normal
+
+      - name: Validate regression suite
+        run: dotnet run --project "$DOTNET_PROJECT" --configuration Release --no-build -- --dry-run

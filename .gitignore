@@ -4,5 +4,7 @@ Reports/*.html
 Reports/*.json
 Reports/*.csv
 Logs/*.log
+TestResults/
+.env
 *.user
 .vs/

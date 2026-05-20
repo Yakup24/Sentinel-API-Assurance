@@ -14,7 +14,7 @@ public sealed class AppConfig
     {
         "submit", "create", "activate", "deactivate", "deactivation",
         "delete", "remove", "cancel", "upsert", "update", "set",
-        "unset", "insert", "add", "change", "order", "callback",
+        "unset", "insert", "add", "change", "payment", "order", "callback",
         "inform", "correction"
     };
 

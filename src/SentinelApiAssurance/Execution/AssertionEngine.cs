@@ -1,4 +1,5 @@
-﻿using System.Xml.Linq;
+using System.Text.Json;
+using System.Xml.Linq;
 using SentinelApiAssurance.Models;
 using SentinelApiAssurance.Services;
 
@@ -24,9 +25,12 @@ public static class AssertionEngine
         {
             "contains" => Contains(assertion, response),
             "notcontains" => NotContains(assertion, response),
+            "httpstatus" => HttpStatus(assertion, response),
             "nosoapfault" => NoSoapFault(response),
             "xmlelementexists" => XmlElementExists(assertion, response),
             "xmlelementequals" => XmlElementEquals(assertion, response),
+            "jsonfieldexists" => JsonFieldExists(assertion, response),
+            "jsonfieldequals" => JsonFieldEquals(assertion, response),
             "maxdurationms" => MaxDuration(assertion, response),
             _ => new AssertionResult
             {
@@ -60,6 +64,21 @@ public static class AssertionEngine
             Type = "NotContains",
             Passed = passed,
             Message = passed ? $"Response does not contain blocked value: {unexpected}" : $"Response contains blocked value: {unexpected}"
+        };
+    }
+
+    private static AssertionResult HttpStatus(AssertionDefinition assertion, RawTestResponse response)
+    {
+        var expected = assertion.Expected ?? assertion.Value ?? "";
+        var passed = int.TryParse(expected, out var expectedStatus) && response.HttpStatus == expectedStatus;
+
+        return new AssertionResult
+        {
+            Type = "HttpStatus",
+            Passed = passed,
+            Message = passed
+                ? $"HTTP status matched: {expected}"
+                : $"HTTP status mismatch: expected {expected}, actual {response.HttpStatus?.ToString() ?? "-"}"
         };
     }
 
@@ -116,6 +135,46 @@ public static class AssertionEngine
         };
     }
 
+    private static AssertionResult JsonFieldExists(AssertionDefinition assertion, RawTestResponse response)
+    {
+        var fieldPath = assertion.ElementName ?? assertion.Value ?? "";
+        var exists = TryReadJson(response.Body, out var document) &&
+                     TryResolveJsonPath(document!.RootElement, fieldPath, out _);
+
+        document?.Dispose();
+
+        return new AssertionResult
+        {
+            Type = "JsonFieldExists",
+            Passed = exists,
+            Message = exists ? $"JSON field exists: {fieldPath}" : $"JSON field not found: {fieldPath}"
+        };
+    }
+
+    private static AssertionResult JsonFieldEquals(AssertionDefinition assertion, RawTestResponse response)
+    {
+        var fieldPath = assertion.ElementName ?? "";
+        var expected = assertion.Expected ?? "";
+        var passed = false;
+
+        if (TryReadJson(response.Body, out var document))
+        {
+            if (TryResolveJsonPath(document!.RootElement, fieldPath, out var value))
+                passed = string.Equals(ToComparableString(value), expected, StringComparison.OrdinalIgnoreCase);
+
+            document.Dispose();
+        }
+
+        return new AssertionResult
+        {
+            Type = "JsonFieldEquals",
+            Passed = passed,
+            Message = passed
+                ? $"JSON field has expected value: {fieldPath}={expected}"
+                : $"JSON field value mismatch: {fieldPath}={expected}"
+        };
+    }
+
     private static AssertionResult MaxDuration(AssertionDefinition assertion, RawTestResponse response)
     {
         var max = assertion.MaxDurationMs ?? 0;
@@ -141,5 +200,48 @@ public static class AssertionEngine
             document = null;
             return false;
         }
+    }
+
+    private static bool TryReadJson(string body, out JsonDocument? document)
+    {
+        try
+        {
+            document = JsonDocument.Parse(body);
+            return true;
+        }
+        catch
+        {
+            document = null;
+            return false;
+        }
+    }
+
+    private static bool TryResolveJsonPath(JsonElement element, string path, out JsonElement value)
+    {
+        value = element;
+
+        if (string.IsNullOrWhiteSpace(path))
+            return false;
+
+        foreach (var segment in path.Split('.', StringSplitOptions.RemoveEmptyEntries | StringSplitOptions.TrimEntries))
+        {
+            if (value.ValueKind != JsonValueKind.Object || !value.TryGetProperty(segment, out value))
+                return false;
+        }
+
+        return true;
+    }
+
+    private static string ToComparableString(JsonElement value)
+    {
+        return value.ValueKind switch
+        {
+            JsonValueKind.String => value.GetString() ?? "",
+            JsonValueKind.Number => value.GetRawText(),
+            JsonValueKind.True => "true",
+            JsonValueKind.False => "false",
+            JsonValueKind.Null => "",
+            _ => value.GetRawText()
+        };
     }
 }

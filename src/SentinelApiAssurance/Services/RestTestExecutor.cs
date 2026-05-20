@@ -22,9 +22,13 @@ public sealed class RestTestExecutor : ITestExecutor
     public async Task<RawTestResponse> ExecuteAsync(EnvironmentConfig environment, ServiceConfig service, TestCase testCase, AppConfig config)
     {
         var endpoint = service.BuildUrl(environment.BaseUrl);
-        var url = string.IsNullOrWhiteSpace(testCase.Path)
+        var renderedPath = string.IsNullOrWhiteSpace(testCase.Path)
+            ? null
+            : TemplateRenderer.Render(testCase.Path, config.TestData);
+
+        var url = string.IsNullOrWhiteSpace(renderedPath)
             ? endpoint
-            : $"{endpoint.TrimEnd('/')}/{testCase.Path.TrimStart('/')}";
+            : $"{endpoint.TrimEnd('/')}/{renderedPath.TrimStart('/')}";
 
         Exception? lastException = null;
 

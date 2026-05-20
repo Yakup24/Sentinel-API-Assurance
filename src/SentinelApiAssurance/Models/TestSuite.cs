@@ -13,7 +13,7 @@ public sealed class TestCase
     public string Id { get; set; } = "";
     public string Title { get; set; } = "";
     public bool Active { get; set; } = true;
-    public string Protocol { get; set; } = "SOAP"; // SOAP veya REST
+    public string Protocol { get; set; } = "SOAP"; // SOAP or REST
     public string Service { get; set; } = "";
     public string Operation { get; set; } = "";
     public string HttpMethod { get; set; } = "POST";

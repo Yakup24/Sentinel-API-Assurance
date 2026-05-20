@@ -1,0 +1,26 @@
+{
+  "_comment": "Example only. This is not a real execution result.",
+  "suiteName": "customer-smoke-tests",
+  "environmentName": "demo",
+  "totalCount": 3,
+  "passedCount": 2,
+  "failedCount": 0,
+  "skippedCount": 1,
+  "results": [
+    {
+      "id": "SOAP-CUSTOMER-001",
+      "status": "Passed",
+      "service": "CustomerService_v1",
+      "operation": "GetCustomer",
+      "httpStatus": 200,
+      "durationMs": 42
+    },
+    {
+      "id": "SOAP-CUSTOMER-DELETE-001",
+      "status": "Skipped",
+      "service": "CustomerService_v1",
+      "operation": "DeleteCustomer",
+      "message": "State-changing operation blocked."
+    }
+  ]
+}
