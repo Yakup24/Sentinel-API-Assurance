@@ -1,5 +1,7 @@
 # Sentinel API Assurance
 
+![CI](https://github.com/Yakup24/Sentinel-API-Assurance/actions/workflows/ci.yml/badge.svg)
+
 .NET-based SOAP/REST API test automation framework for suite-based regression checks, dry-run validation, risky operation guards, and exportable reports.
 
 GitHub repository name: `sentinel-api-assurance`
@@ -91,6 +93,14 @@ More detail is available in [docs/architecture.md](docs/architecture.md).
 - GitHub Actions for CI
 - JSON and XML configuration/request handling
 - Console application CLI
+
+## Current Scope
+
+- 20 service registry entries
+- 148 SOAP operation templates
+- 147 active test cases
+- 1 intentionally inactive operation: `VirtualMsisdn_v1.0.submitOrder`
+- 41 state-changing operations blocked during dry-run
 
 ## Project Structure
 
@@ -242,6 +252,16 @@ Sentinel API Assurance is built with safety-first defaults:
 Current limitation: log masking is not implemented yet. Sensitive values should not be placed in request templates or configuration until masking support is added.
 
 More detail is available in [docs/security-model.md](docs/security-model.md) and [docs/operation-safety.md](docs/operation-safety.md).
+
+## Documentation
+
+- [Architecture](docs/architecture.md)
+- [Test strategy](docs/test-strategy.md)
+- [Security model](docs/security-model.md)
+- [Reporting](docs/reporting.md)
+- [Operation safety](docs/operation-safety.md)
+- [Design decisions](docs/design-decisions.md)
+- [Operational runbook](docs/runbook.md)
 
 ## Limitations
 
